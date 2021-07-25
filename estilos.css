@@ -98,10 +98,15 @@ p {
   border-radius: 20px;
   overflow: auto;
   flex-flow: wrap;
-  max-width: 35%;
-  max-height: 40%;
+  max-width: 40%;
+  max-height: 45%;
   height: auto;
   width: auto; }
+  
+  .imagenDestacada:hover {
+    transform: scale(1.05, 1.1);
+    transition: 1s;
+  }
 
 .imagenes {
   display: flex;
@@ -216,7 +221,9 @@ fieldset {
 
 .contactoGrid {
   display: grid;
-  grid-template-areas: "header header header" "formulario formulario formulario" "Footer Footer Footer";
+  grid-template-areas: "header header header"
+ "formulario formulario formulario"
+ "Footer Footer Footer";
   grid-template-columns: 25% 1fr 1fr;
   grid-template-rows: 1fr 1fr 10%;
   grid-column-gap: 10px;
@@ -225,7 +232,13 @@ fieldset {
 
 .homeGrid {
   display: grid;
-  grid-template-areas: "Lista Lista Lista" "Podcast Podcast Podcast" "Destacada Destacada Destacada" "Noticia1 Noticia1 Noticia1" "Noticia2 Noticia2 Noticia2" "Noticia3 Noticia3 Noticia3" "Pie Pie Pie";
+  grid-template-areas: "Lista Lista Lista"
+ "Podcast Podcast Podcast"
+ "Destacada Destacada Destacada"
+ "Noticia1 Noticia1 Noticia1"
+ "Noticia2 Noticia2 Noticia2"
+ "Noticia3 Noticia3 Noticia3"
+ "Pie Pie Pie";
   grid-template-columns: 25% 1fr 1fr;
   grid-template-rows: 1fr 3fr 2fr 1fr 1fr 1fr 10%;
   grid-column-gap: 10px;
@@ -363,7 +376,11 @@ form {
     left: 30%; }
   .homeGrid {
     display: grid;
-    grid-template-areas: "Lista Podcast Podcast" "Lista Destacada Destacada" "Lista Noticia1 Noticia2" "Lista Noticia3 Noticia3" "Pie Pie Pie";
+    grid-template-areas: "Lista Podcast Podcast"
+ "Lista Destacada Destacada"
+ "Lista Noticia1 Noticia2"
+ "Lista Noticia3 Noticia3"
+ "Pie Pie Pie";
     grid-template-columns: 25% 1fr 1fr;
     grid-template-rows: 1fr 3fr 2fr 1fr 13vh;
     grid-column-gap: 10px;
@@ -456,7 +473,11 @@ form {
 @media (min-width: 600px) {
   .homeGrid {
     display: grid;
-    grid-template-areas: "Lista Podcast Podcast" "Lista Destacada Destacada" "Lista Noticia1 Noticia2" "Lista Noticia3 Noticia3" "Pie Pie Pie";
+    grid-template-areas: "Lista Podcast Podcast"
+ "Lista Destacada Destacada"
+ "Lista Noticia1 Noticia2"
+ "Lista Noticia3 Noticia3"
+ "Pie Pie Pie";
     grid-template-columns: 25% 1fr 1fr;
     grid-template-rows: 1fr 3fr 2fr 1fr 14vh;
     grid-column-gap: 10px;
