@@ -53,7 +53,9 @@ h1 {
   grid-area: Pie;
   display: flex;
   justify-content: space-around;
-  padding-top: 20px;
+  padding-top: 10px;
+  border: solid #00ffb0;
+  border-radius: 10px;
 }
 .pie .pie__a {
   border: yellowgreen;
