@@ -82,7 +82,8 @@ h1 {
 h2 {
   /* acá van todos los estilos */
   /*propiedad: valor;*/
- color: #181818;
+ padding-top: 10px;
+  color: #181818;
   font-size: 40px;
   font-family: "Bebas neue";
 }
