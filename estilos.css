@@ -414,6 +414,17 @@ form {
     position: relative;
   }
 
+  .pie {
+    grid-area: Pie;
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+    border: solid #00ffb0;
+    border-radius: 10px;
+    padding-left: 25%;
+
+  }
+
   .noticiaDestacada {
     background-color: #00ffb0;
     height: 500px;
@@ -596,28 +607,28 @@ form {
   width: auto;
    
  }
-.pie {
-  grid-area: Pie;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 10px;
-  border: solid #00ffb0;
-  border-radius: 10px;
-}
 
-.pie .pie__a {
-  border: yellowgreen;
-}
-
-.pie .pie__rrss--item {
-  height: 100px;
-  width: 100px;
-}
 
 }
 
 /* Estilo para Tablet*/
 @media (min-width: 600px) {
+  .noticia1 {
+    background-color: #00ffb0;
+    border-radius: 10px;
+    grid-area: Noticia1;
+    height: 350px;
+    overflow: hidden;
+  }
+
+  .noticia2 {
+    background-color: #00ffb0;
+    height: 350px;
+    grid-area: Noticia2;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
   .homeGrid {
     display: grid;
     grid-template-areas:
@@ -768,8 +779,7 @@ form {
     padding-top: 2px;
     border: solid #00ffb0;
     border-radius: 10px;
-    padding-right: 25%;
-    padding-left: 25%;
+    
   }
 
   .pie .pie__a {
@@ -777,8 +787,8 @@ form {
   }
 
   .pie .pie__rrss--item {
-    height: 50px;
-    width: 50px;
+    height: 100%;
+    width: 100%;
   }
 
 
@@ -796,4 +806,55 @@ form {
 }
 
 */
-}
+@media (min-width: 1200px) {
+  header {
+    position: relative;
+  }
+
+  .pie {
+    grid-area: Pie;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2px;
+    border: solid #00ffb0;
+    border-radius: 10px;
+    padding-left: 25%;
+
+  }
+  .pie .pie__rrss--item {
+    height: 75px;
+    width: 75px;
+  }
+  .noticiaDestacada {
+    background-color: #00ffb0;
+    height: 450px;
+    grid-area: Destacada;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .noticiaDestacada p {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .noticiaDestacada .noticiaDestacada__p {
+    color: #181818;
+    display: flex;
+    font-size: large;
+  }
+
+  .noticia1 .noticia1__p {
+    display: flex;
+    overflow: hidden;
+    color: #181818;
+    font-size: large;
+  }
+
+  .noticia2 .noticia2__p {
+    display: flex;
+    overflow: hidden;
+    color: #181818;
+    font-size: large;
+  }
+}}
